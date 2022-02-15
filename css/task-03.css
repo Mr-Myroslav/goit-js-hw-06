@@ -1,0 +1,9 @@
+.gallery {
+  display: flex;
+  width: 1080 px;
+  height: 320 px;
+}
+
+.list {
+  list-style-type: none;
+}
