@@ -14,6 +14,7 @@ const images = [
 ];
 
 let galarey = document.querySelector("ul");
+const elements = [];
 for (let i = 0; i < images.length; i++){
   const li = document.createElement("li")
   const image = document.createElement("img");
@@ -24,7 +25,7 @@ for (let i = 0; i < images.length; i++){
 
   // li.append(image);
   li.insertAdjacentHTML("afterbegin", image.outerHTML)
-  galarey.append(li);
   
+  elements.push(li)
 }
-console.log(galarey);
+galarey.append(...elements)

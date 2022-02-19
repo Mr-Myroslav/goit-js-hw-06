@@ -7,7 +7,7 @@ input.addEventListener("click", () => {
 input.addEventListener("blur", () => {
     input.classList.remove("valid");
     input.classList.remove("invalid");
-    if (input.value.length == input.dataset.length) {
+    if (input.value.length === Number(input.dataset.length)) {
         input.classList.add("valid");
     }
      else {
